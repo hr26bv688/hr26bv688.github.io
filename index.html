@@ -1,0 +1,155 @@
+
+<html>
+<head>
+	<title>form1</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<img src="/abc.png" id="logo" alt="logo">
+			<h1>The Express Kidnapping Company</h1>
+		</nav>
+	</header><br>
+	
+	<form action="https://script.google.com/macros/s/AKfycbzVnU0iqY0L06rJgy4iyQfrH0l4b52tQ9lu9RCJwce8xFLWnAsPR0mDilg2varjPLnC/exec" method="post" >
+		<fieldset>
+			<legend><h1>Adduction Contract</h1></legend>
+			<label for="Full_name"> Full Name: </label><input type="text" id="Full_name" name="Full_name"  placeholder="Enter hostage's full name..." required><br>
+			<label for="Fname">Father's Name: </label><input type="text" id="Fname" name="Father_name" placeholder="Enter hostage's father's name..." required>
+			<br>
+			<label for="description">Hostage Description: </label><br>
+			<textarea rows="4" cols="60" name="description" id="description" placeholder="Describe the appearence of the person to be abducted..." required></textarea><br>
+			<label for="Amount"> Amount: </label><input type="number" id="Amount" name="amount" min="200000" placeholder="Price in Dollors..." required> $<br>
+			<label for="Address">Address: </label><br>
+			<textarea rows="4" cols="60" id="Address" name="address" placeholder="Address from where the person is to be abducted..." required></textarea><br>
+
+			<input type="checkbox" name="checkbox" value="check" id="agree" /> I agree to the Terms and Conditions and Privacy Policy of the kidnapping company and i know that the same is not liable for the safety of hostage.<br>  <br>
+			<input type="submit" name="submit" id="submit" value="submit"   />
+
+		</fieldset>
+		<img src="/abcd.png" id="infield">
+
+	</form>
+	<style>
+		
+			
+		form{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		input[type=text]:focus {
+  			background-color: lightblue;
+			}
+
+		input[type=number]:focus {
+  			background-color: lightblue;
+			}
+
+		input[type="submit" i]{
+			border-radius: 13px;
+		}
+
+		input[type="submit" i]:hover {
+  			background-color: lightgoldenrodyellow;
+  			border-radius: 5px;
+			}
+
+		textarea:focus{
+			background-color: lightblue;
+		}
+		form img{
+			z-index: 2222;
+			position: absolute;
+			height: 400px;
+			width: 400px;
+			top:30vh;
+			right: 20vw;
+			filter: drop-shadow(5px 5px 5px #222); 
+		}
+		input#Fname {
+    		width: 40.3%;
+   		 	border-radius: 5px;
+    		padding: 12px 20px;
+    		margin: 8px 0;
+    		box-sizing: border-box;
+			}
+
+		input#Full_name {
+    		width: 43%;
+   		 	border-radius: 5px;
+    		padding: 12px 20px;
+    		margin: 8px 0;
+    		box-sizing: border-box;
+			}
+
+		input#Amount {
+   		 	border-radius: 5px;
+    		padding: 12px 20px;
+    		margin: 8px 0;
+    		box-sizing: border-box;
+			}
+
+
+		textarea#description{
+			border-radius: 5px;
+    		padding: 12px 20px;
+    		margin: 8px 0;
+    		box-sizing: border-box;
+		}
+
+
+		textarea#Address{
+			border-radius: 5px;
+    		padding: 12px 20px;
+    		margin: 8px 0;
+    		box-sizing: border-box;
+		}
+
+		body{
+			background-color: #b8cccecc;
+		}
+		header{
+			background-color: whitesmoke;
+		}
+		h1{
+			font-weight: 300;
+			font-size: 35;
+		}
+
+		img{
+			width: 98px;
+			height: 98px;
+			}
+		fieldset{
+			z-index: 2;
+			position: absolute;
+			right: 19vw;
+			top: 21vh;
+			background-color: #94e9c7;
+			height: 560px;
+			width: 900px;
+			}
+
+		header{
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: 0;
+			border-bottom: 1px solid rgba(30, 155, 95, 0.5);
+			}
+
+		header nav{
+			max-width: 1400px;
+			margin: 0 auto;
+			padding: 0 2rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			}
+	
+	</style>
+
+
+</body>
+</html>
