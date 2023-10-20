@@ -23,7 +23,7 @@
 			<br>
 			<label for="description">Hostage Description: </label><br>
 			<textarea rows="4" cols="60" name="description" id="description" placeholder="Describe the appearence of the person to be abducted..." required></textarea><br>
-			<label for="Amount"> Amount: </label><input type="number" id="Amount" name="amount" min="200000" placeholder="Price in Dollors..." required> $<br>
+			<label for="Amount"> Amount: </label><input type="number" id="Amount" name="amount" min="200000" placeholder="Price in Rupees..." required> ₹<br>
 			<label for="Address">Address: </label><br>
 			<textarea rows="4" cols="60" id="Address" name="address" placeholder="Address from where the person is to be abducted..." required></textarea><br>
 
@@ -153,7 +153,11 @@
 			}
 	
 	</style>
-
+	  <script type="text/javascript">  
+if(performance.navigation.type == 2){
+   location.reload(true);
+}
+  </script>
 
 </body>
 </html>
