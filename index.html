@@ -21,7 +21,7 @@
 	<div class="forma"></div>
 
 	
-	<form action="https://script.google.com/macros/s/AKfycbwh8T90BfMwpiBkCdZaWd-0Wlq33sfyhw0RAd8kiMVskE-q4i3ewy35GYhe7aOYt-Ox/exec" method="post"
+	<form action="https://script.google.com/macros/s/AKfycbz_edf-sK4wySbL7XDTULCWT5P0tTPTbh5jFTpDpXGW4mABBpi_h7lqLUcxkxio-Ys/exec" method="post"
 >
 		<fieldset>
 			<legend><h1 class="heading">Abduction Contract</h1></legend>
@@ -674,10 +674,21 @@ function onlyNumberKey(evt) {
         };
 
 		document.querySelector('form').addEventListener('submit', function(event) {
-  event.preventDefault(); 
-  alert('Request Sucessfully Submited!'); 
-  window.location.href = 'https://hinu.codes/'; 
-		});
+  event.preventDefault(); // prevent the form from submitting normally
+  alert('Form submitted!'); // show an alert
+  const form = event.target;
+  const formData = new FormData(form);
+  const url = form.action;
+  fetch(url, {
+    method: 'POST',
+    body: formData
+  }).then(response => {
+    window.location.href = 'https://hinu.codes'; // redirect to the website
+  }).catch(error => {
+    console.error(error);
+  });
+});
+	
   </script>
 
 </body>
